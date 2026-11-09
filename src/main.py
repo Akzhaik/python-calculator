@@ -18,9 +18,20 @@ def divide(a, b):
 def power(a, b):
     return a ** b
 
+def get_number():
+    while True:
+        try:
+            return float(input("Введите число: "))
+        except ValueError:
+            print("Ошибка! Введите число.")
+
 if __name__ == "__main__":
-    print("Калькулятор")
-    print("Сложение:", add(10, 5))
-    print("Вычитание:", subtract(10, 5))
-    print("Умножение:", multiply(10, 5))
-    print("Деление:", divide(10, 5))
+    print("=== КАЛЬКУЛЯТОР ===")
+    a = get_number()
+    b = get_number()
+
+    print("Сложение:", add(a, b))
+    print("Вычитание:", subtract(a, b))
+    print("Умножение:", multiply(a, b))
+    print("Деление:", divide(a, b))
+    print("Степень:", power(a, b))
