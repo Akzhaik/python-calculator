@@ -1,3 +1,4 @@
+# Search operations by name
 def add(a, b):
     return a + b
 
