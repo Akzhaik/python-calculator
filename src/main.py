@@ -15,6 +15,8 @@ def divide(a, b):
         return "Ошибка: деление на ноль"
     return a / b
 
+def power(a, b):
+    return a ** b
 
 if __name__ == "__main__":
     print("Калькулятор")
