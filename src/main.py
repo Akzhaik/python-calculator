@@ -25,6 +25,10 @@ def get_number():
         except ValueError:
             print("Ошибка! Введите число.")
 
+def search_operation(history, operation):
+    return [item for item in history
+            if operation.lower() in item.lower()]
+
 if __name__ == "__main__":
     print("=== КАЛЬКУЛЯТОР ===")
     a = get_number()
