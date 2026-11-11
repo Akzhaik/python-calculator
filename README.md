@@ -18,3 +18,7 @@ python src/main.py
 ## Tests
 
 pytest
+
+## Version
+
+Current project version: 2.0
