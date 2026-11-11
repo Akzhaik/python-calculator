@@ -15,3 +15,13 @@ def test_multiply():
 
 def test_divide():
     assert divide(10, 2) == 5
+
+from src.main import square_root
+
+
+def test_square_root():
+    assert square_root(25) == 5
+
+
+def test_square_root_zero():
+    assert square_root(0) == 0
