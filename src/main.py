@@ -1,3 +1,4 @@
+PROGRAM_TITLE = "My Calculator"
 def add(a, b):
     return a + b
 
